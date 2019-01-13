@@ -5,8 +5,11 @@ Take a picture ONLY if you think it's meme worthy. Post it with a caption to mak
 ## Quick Look (NOTE: BETTER TO USE REAL DEVICE FOR SIGN-UP)
 
 <pre>
-If you're too lazy to sign-up and want to load it on the iPhone simulator instead of using an actualy device 
-then I have an existing account made just for you to check it out! 
+If you're too lazy to sign-up and prefer loading with iPhone simulator instead of using a real device 
+then I have an existing account just for your convenience.  
+
+Already populated with few posts on the meme feed. 
+Obviously, user won't be able to access the camera and take a picture unless one has a real device to take it with.
 
 username: Marcochun21@gmail.com 
 password: nurichun21
