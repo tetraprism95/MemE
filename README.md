@@ -2,6 +2,17 @@
 
 Take a picture ONLY if you think it's meme worthy. Post it with a caption to make it even funnier.
 
+## Quick Look (NOTE: BETTER TO USE REAL DEVICE FOR SIGN-UP)
+
+<pre>
+If you're too lazy to sign-up and want to load it on the iPhone simulator instead of using an actualy device 
+then I have an existing account made just for you to check it out! 
+
+username: Marcochun21@gmail.com 
+password: nurichun21
+
+</pre>
+
 ## Demo
 
 ![memerloginsignup](https://user-images.githubusercontent.com/36717095/51081106-f1046700-16b5-11e9-9353-6851f5b61297.gif)
