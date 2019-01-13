@@ -25,41 +25,58 @@ password: nurichun21
 ![memercamera](https://user-images.githubusercontent.com/36717095/51081110-fa8dcf00-16b5-11e9-82ad-c2e4be5768d5.gif)
 ![memereditprofile](https://user-images.githubusercontent.com/36717095/51081111-fc579280-16b5-11e9-868a-5735bda8d6b3.gif)
 
-USE the account listed below to check basic UI Implementations & how things work. (If you want to see already registered version)  
+## Built Programmatically (NO STORYBOARD)
 
-Login Information: Email: Marcochun21@gmail.com && Password: nurichun21
-----------------------------------------------------------------------------
+I don't have any bias towards building apps with storyboard, it's just that I feel more comfortable coding programmatically. 
+Maybe in the near future I'll build couple of apps with storyboard.
 
-Note: Created Programmatically
-Note: Meme app was created to understand different concepts (concepts will be listed),  
+## Requirements
 
-Implementations (LISTED BELOW) 
+<pre>
+IDE: Xcode (NEEDED TO OPEN)
+Language&Version: Swift 4.2 
+Developing software for mainly, macOS, iOS, watchOS, and tvOS.
+</pre>
 
-Imports throughout VC'S : UIKit(Default), Photos, AVFoundation, Firebase 
+## Features
 
-1. AVFoundation: Camera Implementation displayed in custom UI.
+Meme app was created to understand different concepts such as...
 
-2. Photos: If one wanted to upload photos from Photo Album, this would my idea for photos import.
+- Imports throughout VC'S : UIKit(Default), Photos, AVFoundation, Firebase 
+
+- AVFoundation: Camera Implementation displayed in custom UI.
+
+- Photos: If one wanted to upload photos from Photo Album, this would my idea for photos import.
  
-3. Firebase: Learned how to use observe(), updateVal(), Snapshot data to convert to swift, create and update to specific root ref, Fetch data from specific ref. ref = "reference" 
+- Firebase: Learned how to use observe(), updateVal(), Snapshot data to convert to swift, create and update to specific root ref, Fetch data from specific ref. ref = "reference" 
 
-4. Dynamic Cell Sizing: Learned how to create dynamic cell size depending on size of data input. For example, if text is more than 1 line, then the label is able to adjust to that height and will reflect the cell as well.
+- Dynamic Cell Sizing: Learned how to create dynamic cell size depending on size of data input. For example, if text is more than 1 line, then the label is able to adjust to that height and will reflect the cell as well.
 
-5. CollectionViewController: Creating UICollectionViewController() && Cell Programmatically. Prefer it over UITableViewController due to flexibility.
+- CollectionViewController: Creating UICollectionViewController() && Cell Programmatically. Prefer it over UITableViewController due to flexibility.
 
-6. UIViewControllerAnimatedTransitioning: Learned how to create custom animation transitions between controllers, .to and .from. Learning the positioning and how to animate using UIView.animate() and ending the completion.
+- UIViewControllerAnimatedTransitioning: Learned how to create custom animation transitions between controllers, .to and .from. Learning the positioning and how to animate using UIView.animate() and ending the completion.
 
-7. UIViewController/ UITextField Login : In welcome/login controller I learned how to adjust the UITextFields positions, x and y, when blocked by keyboard. 
+- UIViewController/ UITextField Login : In welcome/login controller I learned how to adjust the UITextFields positions, x and y, when blocked by keyboard. 
 
-8. NSNotificationCenter to post and observe: When posting a post, another controller will observe the action and handle it accordingly. 
+- NSNotificationCenter to post and observe: When posting a post, another controller will observe the action and handle it accordingly. 
 
-9. Custom Protocol Delegation
+- Custom Protocol Delegation
 
-10. Completion Callbacks
+- Completion Callbacks
 
-11. And much more. 
+- And much more...
 
-## Bugs
+## Bugs/Update
+
+- When trying to refresh the meme feed by scrolling down, the feed will continuously load and possibly crash. 
+I didn't implement the refresh, so it's more of "I need to update it" instead of it being an actual bug. 
+
+- When posting a meme to the home feed, it will sometimes not appear instantly. Therefore, closing it and running it again will do the trick. I hope... LOOL
+
+- On the User Profile tab, there is an "Edit Profile" button. When tapped/clicked or w.e, it will show a screen where
+most of the bottom section is yellow. Just need to change the color, but too lazy since this was done a year ago as project for learning purposes. 
+
+- IDK Other stuff if you can find fam.
 
 
 
