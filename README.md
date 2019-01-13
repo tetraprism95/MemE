@@ -1,7 +1,18 @@
-# MemeApp
-Meme App: Take Pictures of funny events that you seem "memeable" and post it with a funny caption.
+# Memer 
+
+Take a picture ONLY if you think it's meme worthy. Post it with a caption to make it even funnier.
+
+## Demo
+
+![memerloginsignup](https://user-images.githubusercontent.com/36717095/51081106-f1046700-16b5-11e9-9353-6851f5b61297.gif)
+![memerloggedin](https://user-images.githubusercontent.com/36717095/51081107-f2ce2a80-16b5-11e9-9167-7329e332d0d7.gif)
+![memerprofilespics](https://user-images.githubusercontent.com/36717095/51081108-f5c91b00-16b5-11e9-9c60-d4d46a7913bb.gif)
+![memerfeed](https://user-images.githubusercontent.com/36717095/51081109-f8c40b80-16b5-11e9-9d25-191fbb6e89cc.gif)
+![memercamera](https://user-images.githubusercontent.com/36717095/51081110-fa8dcf00-16b5-11e9-82ad-c2e4be5768d5.gif)
+![memereditprofile](https://user-images.githubusercontent.com/36717095/51081111-fc579280-16b5-11e9-868a-5735bda8d6b3.gif)
 
 USE the account listed below to check basic UI Implementations & how things work. (If you want to see already registered version)  
+
 Login Information: Email: Marcochun21@gmail.com && Password: nurichun21
 ----------------------------------------------------------------------------
 
@@ -33,6 +44,10 @@ Imports throughout VC'S : UIKit(Default), Photos, AVFoundation, Firebase
 10. Completion Callbacks
 
 11. And much more. 
+
+## Bugs
+
+
 
 
 
