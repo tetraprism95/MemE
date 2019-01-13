@@ -74,7 +74,7 @@ I didn't implement the refresh, so it's more of "I need to update it" instead of
 - When posting a meme to the home feed, it will sometimes not appear instantly. Therefore, closing it and running it again will do the trick. I hope... LOOL
 
 - On the User Profile tab, there is an "Edit Profile" button. When tapped/clicked or w.e, it will show a screen where
-most of the bottom section is yellow. Just need to change the color, but too lazy since this was done a year ago as project for learning purposes. 
+most of the bottom section is yellow. Just need to change the color, but too lazy since this was done a year ago for learning purposes. 
 
 - IDK Other stuff if you can find fam.
 
