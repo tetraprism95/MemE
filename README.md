@@ -38,6 +38,15 @@ Language&Version: Swift 4.2
 Developing software for mainly, macOS, iOS, watchOS, and tvOS.
 </pre>
 
+### What Is Firebase?
+
+It is is BaaS or Backend-as-a-Service as an app development platform on Google Cloud.
+For example, the backend holds all users data and can either write to or retreive from Google Cloud Platform; it can do a lot more than that. 
+
+Heres the link to get started! **https://firebase.google.com/**
+
+Heres the link how to setup Firebase to your iOS Project! **https://firebase.google.com/docs/ios/setup**
+
 ## Features
 
 Meme app was created to understand different concepts such as...
