@@ -66,7 +66,7 @@ Meme app was created to understand different concepts such as...
 
 - And much more...
 
-## Bugs/Update
+## Bugs/Updates
 
 - When trying to refresh the meme feed by scrolling down, the feed will continuously load and possibly crash. 
 I didn't implement the refresh, so it's more of "I need to update it" instead of it being an actual bug. 
@@ -75,6 +75,8 @@ I didn't implement the refresh, so it's more of "I need to update it" instead of
 
 - On the User Profile tab, there is an "Edit Profile" button. When tapped/clicked or w.e, it will show a screen where
 most of the bottom section is yellow. Just need to change the color, but too lazy since this was done a year ago for learning purposes. 
+
+- PodFile cannot be opened anymore.
 
 - IDK Other stuff if you can find fam.
 
