@@ -44,25 +44,25 @@ Meme app was created to understand different concepts such as...
 
 - Imports throughout VC'S : UIKit(Default), Photos, AVFoundation, Firebase 
 
-- AVFoundation: Camera Implementation displayed in custom UI.
+- **AVFoundation**: Camera Implementation displayed in custom UI.
 
-- Photos: If one wanted to upload photos from Photo Album, this would my idea for photos import.
+- **Photos**: If one wanted to upload photos from Photo Album, this would my idea for photos import.
  
-- Firebase: Learned how to use observe(), updateVal(), Snapshot data to convert to swift, create and update to specific root ref, Fetch data from specific ref. ref = "reference" 
+- **Firebase**: Learned how to use observe(), updateVal(), Snapshot data to convert to swift, create and update to specific root ref, Fetch data from specific ref. ref = "reference" 
 
-- Dynamic Cell Sizing: Learned how to create dynamic cell size depending on size of data input. For example, if text is more than 1 line, then the label is able to adjust to that height and will reflect the cell as well.
+- **Dynamic Cell Sizing**: Learned how to create dynamic cell size depending on size of data input. For example, if text is more than 1 line, then the label is able to adjust to that height and will reflect the cell as well.
 
-- CollectionViewController: Creating UICollectionViewController() && Cell Programmatically. Prefer it over UITableViewController due to flexibility.
+- **CollectionViewController**: Creating UICollectionViewController() && Cell Programmatically. Prefer it over UITableViewController due to flexibility.
 
-- UIViewControllerAnimatedTransitioning: Learned how to create custom animation transitions between controllers, .to and .from. Learning the positioning and how to animate using UIView.animate() and ending the completion.
+- **UIViewControllerAnimatedTransitioning**: Learned how to create custom animation transitions between controllers, .to and .from. Learning the positioning and how to animate using UIView.animate() and ending the completion.
 
-- UIViewController/ UITextField Login : In welcome/login controller I learned how to adjust the UITextFields positions, x and y, when blocked by keyboard. 
+- **UIViewController/ UITextField Login**: In welcome/login controller I learned how to adjust the UITextFields positions, x and y, when blocked by keyboard. 
 
-- NSNotificationCenter to post and observe: When posting a post, another controller will observe the action and handle it accordingly. 
+- **NSNotificationCenter** to post and observe: When posting a post, another controller will observe the action and handle it accordingly. 
 
-- Custom Protocol Delegation
+- **Custom Protocol Delegation**
 
-- Completion Callbacks
+- **Completion Callbacks**
 
 - And much more...
 
