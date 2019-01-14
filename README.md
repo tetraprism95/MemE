@@ -76,6 +76,8 @@ I didn't implement the refresh, so it's more of "I need to update it" instead of
 - On the User Profile tab, there is an "Edit Profile" button. When tapped/clicked or w.e, it will show a screen where
 most of the bottom section is yellow. Just need to change the color, but too lazy since this was done a year ago for learning purposes. 
 
+- On the login screen, the Facebook button won't work at the moment. Did not implement FB Login SDK. Later.
+
 - PodFile cannot be opened anymore.
 
 - IDK Other stuff if you can find fam.
