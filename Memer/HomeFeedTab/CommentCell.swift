@@ -15,8 +15,8 @@ class CommentCell: UICollectionViewCell {
             
             guard let comment = comment else { return }
             
-            let attributedText = NSMutableAttributedString(string: comment.user.username,  attributes: [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 14), NSAttributedStringKey.foregroundColor : UIColor.white])
-            attributedText.append(NSMutableAttributedString(string: "  \(comment.text)", attributes: [NSAttributedStringKey.foregroundColor : UIColor.white, NSAttributedStringKey.font : UIFont.systemFont(ofSize: 12)]))
+            let attributedText = NSMutableAttributedString(string: comment.user.username,  attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 14), NSAttributedString.Key.foregroundColor : UIColor.white])
+            attributedText.append(NSMutableAttributedString(string: "  \(comment.text)", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white, NSAttributedString.Key.font : UIFont.systemFont(ofSize: 12)]))
             commentLabel.attributedText = attributedText
             
             profileImageView.loadImage(urlString: comment.user.profileImageURL)

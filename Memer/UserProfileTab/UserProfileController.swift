@@ -65,13 +65,13 @@ extension UserProfileController
         
         collectionView?.backgroundColor = .mainDark()
         collectionView?.register(UserProfileCell.self, forCellWithReuseIdentifier:  Identification.photoCellId)
-        collectionView?.register(UserProfileHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: Identification.headerId)
+        collectionView?.register(UserProfileHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: Identification.headerId)
         collectionView?.register(HomeCell.self, forCellWithReuseIdentifier: Identification.postCellId)
     }
     
     private func setupNavigationBarItems() {
     
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font :  UIFont(name: "Cochin", size: 25) ??  UIFont.boldSystemFont(ofSize: 25), NSAttributedStringKey.foregroundColor : UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font :  UIFont(name: "Cochin", size: 25) ??  UIFont.boldSystemFont(ofSize: 25), NSAttributedString.Key.foregroundColor : UIColor.white]
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "LogoutButton").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action:
             #selector(handleLogout))
     }
@@ -155,7 +155,7 @@ extension UserProfileController {
                 let memeCaptionSize = CGSize(width: approximateWidthMemeCaptionLabel, height: 1000)
                 let memeDescriptionSize = CGSize(width: approximateWidthMemeDescriptionLabel, height: 1000)
                 
-                let attributes = [NSAttributedStringKey.font : UIFont.init(name: "ChalkboardSE-Bold", size: 18) ?? UIFont.boldSystemFont(ofSize: 18)]
+                let attributes = [NSAttributedString.Key.font : UIFont.init(name: "ChalkboardSE-Bold", size: 18) ?? UIFont.boldSystemFont(ofSize: 18)]
                 
                 // usernameContainerView: H - 44
                 // postImageView: H - 312.5

@@ -17,9 +17,9 @@ class LogInController: UIViewController
     {
         let button = UIButton(type: .system)
         
-        let attributetedText = NSMutableAttributedString(string: "Forgot Password?  ", attributes: [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 14), NSAttributedStringKey.foregroundColor : UIColor.lightGray])
+        let attributetedText = NSMutableAttributedString(string: "Forgot Password?  ", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 14), NSAttributedString.Key.foregroundColor : UIColor.lightGray])
         
-        attributetedText.append(NSAttributedString(string: "Reset", attributes: [NSAttributedStringKey.foregroundColor : UIColor.rgb(r: 240, g: 237, b: 237), NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 14)]))
+        attributetedText.append(NSAttributedString(string: "Reset", attributes: [NSAttributedString.Key.foregroundColor : UIColor.rgb(r: 240, g: 237, b: 237), NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 14)]))
         
         button.setAttributedTitle(attributetedText, for: .normal)
         
@@ -32,9 +32,9 @@ class LogInController: UIViewController
     {
         let button = UIButton(type: .system)
         
-        let attributedText = NSMutableAttributedString(string: "No Account?  ", attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 14), NSAttributedStringKey.foregroundColor : UIColor.lightGray])
+        let attributedText = NSMutableAttributedString(string: "No Account?  ", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14), NSAttributedString.Key.foregroundColor : UIColor.lightGray])
         
-        attributedText.append(NSAttributedString(string: "Sign Up", attributes: [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 14), NSAttributedStringKey.foregroundColor : UIColor.rgb(r: 240, g: 237, b: 237)]))
+        attributedText.append(NSAttributedString(string: "Sign Up", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 14), NSAttributedString.Key.foregroundColor : UIColor.rgb(r: 240, g: 237, b: 237)]))
         
         button.setAttributedTitle(attributedText, for: .normal)
         
@@ -60,7 +60,7 @@ class LogInController: UIViewController
     {
         let button = UIButton(type: .system)
         
-        button.setTitle("Log In", for: UIControlState.normal)
+        button.setTitle("Log In", for: UIControl.State.normal)
         button.setTitleColor(UIColor.black, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 25)
         button.layer.borderColor = UIColor.rgb(r: 86, g: 86, b: 86).cgColor
@@ -208,17 +208,17 @@ class LogInController: UIViewController
         
         // Listen for keyboard events
         
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
  
     }
     
     deinit
     {
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
     
  
@@ -227,11 +227,11 @@ class LogInController: UIViewController
     
     @objc func keyboardWillChange(notification: Notification)
     {
-        guard let keyboardRect = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+        guard let keyboardRect = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
             return
         }
         
-        if notification.name == Notification.Name.UIKeyboardWillShow || notification.name == Notification.Name.UIKeyboardWillChangeFrame 
+        if notification.name == UIResponder.keyboardWillShowNotification || notification.name == UIResponder.keyboardWillChangeFrameNotification 
         {
             view.frame.origin.y = -keyboardRect.height
         } else {

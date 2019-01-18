@@ -52,8 +52,8 @@ class UserProfileHeader: UICollectionViewCell {
         label.textAlignment = .center
         label.layer.cornerRadius = 10
         
-        let attributedText = NSMutableAttributedString(attributedString: NSAttributedString(string: "100\n", attributes:  [NSAttributedStringKey.foregroundColor : UIColor.rgb(r: 77, g: 255, b: 98),  NSAttributedStringKey.font : UIFont(name: "Futura-CondensedMedium", size: 25) ?? UIFont.boldSystemFont(ofSize: 18)]))
-        attributedText.append(NSAttributedString(attributedString: NSAttributedString(string: "followers", attributes: [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 10), NSAttributedStringKey.foregroundColor : UIColor.rgb(r: 217, g: 215, b: 215)])))
+        let attributedText = NSMutableAttributedString(attributedString: NSAttributedString(string: "100\n", attributes:  [NSAttributedString.Key.foregroundColor : UIColor.rgb(r: 77, g: 255, b: 98),  NSAttributedString.Key.font : UIFont(name: "Futura-CondensedMedium", size: 25) ?? UIFont.boldSystemFont(ofSize: 18)]))
+        attributedText.append(NSAttributedString(attributedString: NSAttributedString(string: "followers", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 10), NSAttributedString.Key.foregroundColor : UIColor.rgb(r: 217, g: 215, b: 215)])))
         label.attributedText = attributedText
         
         return label
@@ -68,8 +68,8 @@ class UserProfileHeader: UICollectionViewCell {
         label.numberOfLines = 2
         label.layer.cornerRadius = 10
         
-        let attributedText = NSMutableAttributedString(attributedString: NSAttributedString(string: "99\n", attributes:  [NSAttributedStringKey.foregroundColor : UIColor.rgb(r: 77, g: 255, b: 98), NSAttributedStringKey.font :UIFont(name: "Futura-CondensedMedium", size: 25) ?? UIFont.boldSystemFont(ofSize: 18)]))
-        attributedText.append(NSAttributedString(attributedString: NSAttributedString(string: "posts", attributes: [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 10), NSAttributedStringKey.foregroundColor : UIColor.rgb(r: 217, g: 215, b: 215)])))
+        let attributedText = NSMutableAttributedString(attributedString: NSAttributedString(string: "99\n", attributes:  [NSAttributedString.Key.foregroundColor : UIColor.rgb(r: 77, g: 255, b: 98), NSAttributedString.Key.font :UIFont(name: "Futura-CondensedMedium", size: 25) ?? UIFont.boldSystemFont(ofSize: 18)]))
+        attributedText.append(NSAttributedString(attributedString: NSAttributedString(string: "posts", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 10), NSAttributedString.Key.foregroundColor : UIColor.rgb(r: 217, g: 215, b: 215)])))
         label.attributedText = attributedText
         
         return label
@@ -84,8 +84,8 @@ class UserProfileHeader: UICollectionViewCell {
         label.textAlignment = .center
         label.layer.cornerRadius = 10
         
-        let attributedText = NSMutableAttributedString(attributedString: NSAttributedString(string: "30\n", attributes:  [NSAttributedStringKey.foregroundColor : UIColor.rgb(r: 77, g: 255, b: 98), NSAttributedStringKey.font : UIFont(name: "Futura-CondensedMedium", size: 25) ?? UIFont.boldSystemFont(ofSize: 18)]))
-        attributedText.append(NSAttributedString(attributedString: NSAttributedString(string: "memers", attributes: [NSAttributedStringKey.font  : UIFont.boldSystemFont(ofSize: 10), NSAttributedStringKey.foregroundColor : UIColor.rgb(r: 217, g: 215, b: 215)])))
+        let attributedText = NSMutableAttributedString(attributedString: NSAttributedString(string: "30\n", attributes:  [NSAttributedString.Key.foregroundColor : UIColor.rgb(r: 77, g: 255, b: 98), NSAttributedString.Key.font : UIFont(name: "Futura-CondensedMedium", size: 25) ?? UIFont.boldSystemFont(ofSize: 18)]))
+        attributedText.append(NSAttributedString(attributedString: NSAttributedString(string: "memers", attributes: [NSAttributedString.Key.font  : UIFont.boldSystemFont(ofSize: 10), NSAttributedString.Key.foregroundColor : UIColor.rgb(r: 217, g: 215, b: 215)])))
         label.attributedText = attributedText
         
         return label

@@ -137,12 +137,12 @@ class PhotoSelectorController: UICollectionViewController, UICollectionViewDeleg
     private func setupNavigationItem() {
         if self.forEditing {
             navigationItem.rightBarButtonItem = doneBarButton
-            navigationController?.navigationBar.titleTextAttributes =  [NSAttributedStringKey.foregroundColor : UIColor.white]
+            navigationController?.navigationBar.titleTextAttributes =  [NSAttributedString.Key.foregroundColor : UIColor.white]
             navigationItem.setLeftBarButton(cancelBarButton, animated: true)
             navigationController?.navigationBar.tintColor = .mainDark()
         } else {
             navigationItem.rightBarButtonItem = pickBarButton
-            navigationController?.navigationBar.titleTextAttributes =  [NSAttributedStringKey.foregroundColor : UIColor.white]
+            navigationController?.navigationBar.titleTextAttributes =  [NSAttributedString.Key.foregroundColor : UIColor.white]
             navigationItem.setRightBarButton(pickBarButton, animated: true)
             navigationItem.setLeftBarButton(cancelBarButton, animated: true)
             navigationController?.navigationBar.barTintColor = .mainDark() 
@@ -155,7 +155,7 @@ class PhotoSelectorController: UICollectionViewController, UICollectionViewDeleg
         collectionView?.backgroundColor = UIColor.rgb(r: 216, g: 216, b: 216)
         collectionView?.delegate = self
         collectionView?.register(PhotoSelectorCell.self, forCellWithReuseIdentifier: Storyboard.cellId)
-        collectionView?.register(PhotoSelectorHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: Storyboard.headerId)
+        collectionView?.register(PhotoSelectorHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: Storyboard.headerId)
     }
     
     // MARK: - PHFetchOptions

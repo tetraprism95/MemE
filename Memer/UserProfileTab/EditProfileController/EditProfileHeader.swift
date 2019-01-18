@@ -115,7 +115,7 @@ extension EditProfileHeader {
         let filename = NSUUID().uuidString
         
         guard let profileImage = selectedImage else { return }
-        guard let imageData = UIImageJPEGRepresentation(profileImage, 0.5) else { return }
+        guard let imageData = profileImage.jpegData(compressionQuality: 0.5) else { return }
         Storage.storage().reference().child("profilePictures").child(filename).putData(imageData, metadata: nil) { (metaData, error) in
             
             if let error = error {

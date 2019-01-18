@@ -47,7 +47,7 @@ class CommentsController: UICollectionViewController, UICollectionViewDelegateFl
         let tf = UITextField()
         tf.backgroundColor = .mainDark()
         tf.textColor = .white
-        tf.attributedPlaceholder = NSAttributedString(string: "Enter text here..", attributes: [NSAttributedStringKey.foregroundColor : UIColor.white])
+        tf.attributedPlaceholder = NSAttributedString(string: "Enter text here..", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
         
         return tf
     }()

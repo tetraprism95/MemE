@@ -420,13 +420,16 @@
 				TargetAttributes = {
 					8C3DBEC3209788CA0008F386 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1010;
 					};
 					8C3DBED7209788CB0008F386 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1010;
 						TestTargetID = 8C3DBEC3209788CA0008F386;
 					};
 					8C3DBEE2209788CB0008F386 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1010;
 						TestTargetID = 8C3DBEC3209788CA0008F386;
 					};
 				};
@@ -772,7 +775,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tetra.Memer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				STRIP_BITCODE_FROM_COPIED_FILES = NO;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -792,7 +796,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tetra.Memer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				STRIP_BITCODE_FROM_COPIED_FILES = NO;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -813,7 +818,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tetra.MemerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memer.app/Memer";
 			};
@@ -835,7 +840,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tetra.MemerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memer.app/Memer";
 			};
@@ -856,7 +861,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tetra.MemerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Memer;
 			};
@@ -877,7 +882,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tetra.MemerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Memer;
 			};

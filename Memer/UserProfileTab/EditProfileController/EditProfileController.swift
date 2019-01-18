@@ -102,14 +102,14 @@ class EditProfileController: UICollectionViewController, UICollectionViewDelegat
     
     private func setupNavBarTItle() {
         title = "Edit Profile"
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
     }
     
     // MARK: - setupCollectionAttributes()
     
     private func setupCollectionAttributes() {
         collectionView?.backgroundColor = .yellow
-        collectionView?.register(EditProfileHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: Identification.editProfileCellId)
+        collectionView?.register(EditProfileHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: Identification.editProfileCellId)
     }
     
     // MARK: - setupNavigationAttributes()

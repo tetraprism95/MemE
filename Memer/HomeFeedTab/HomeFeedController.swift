@@ -56,7 +56,7 @@ extension HomeFeedController {
     
     private func setupNavigationBarItems() {
         navigationItem.title = "Meme Feed"
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font : UIFont(name: "Cochin", size: 25) ??  UIFont.boldSystemFont(ofSize: 25), NSAttributedStringKey.foregroundColor : UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font : UIFont(name: "Cochin", size: 25) ??  UIFont.boldSystemFont(ofSize: 25), NSAttributedString.Key.foregroundColor : UIColor.white]
         navigationController?.navigationBar.barTintColor = .mainDark()
     }
     
@@ -224,7 +224,7 @@ extension HomeFeedController {
             let memeCaptionSize = CGSize(width: approximateWidthMemeCaptionLabel, height: 1000)
             let memeDescriptionSize = CGSize(width: approximateWidthMemeDescriptionLabel, height: 1000)
             
-            let attributes = [NSAttributedStringKey.font : UIFont.init(name: "ChalkboardSE-Bold", size: 18) ?? UIFont.boldSystemFont(ofSize: 18)] 
+            let attributes = [NSAttributedString.Key.font : UIFont.init(name: "ChalkboardSE-Bold", size: 18) ?? UIFont.boldSystemFont(ofSize: 18)] 
             
             // usernameContainerView: H - 44
             // postImageView: H - 312.5

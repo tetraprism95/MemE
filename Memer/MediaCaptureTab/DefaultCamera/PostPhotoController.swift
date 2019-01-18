@@ -146,7 +146,7 @@ class PostPhotoController: UIViewController, UIViewControllerTransitioningDelega
         guard let memeCaption = memeTitleTextView.text, memeCaption.count > 0 else { return }
         guard let memeDescription = descriptionTextView.text, memeDescription.count >= 0 else { return }
         guard let image = selectedImage else { return }
-        guard let imageData = UIImageJPEGRepresentation(image, 0.5) else { return }
+        guard let imageData = image.jpegData(compressionQuality: 0.5) else { return }
         
         Storage.storage().reference().child("posts").child(filename).putData(imageData, metadata: nil) { (metaData, error) in
             

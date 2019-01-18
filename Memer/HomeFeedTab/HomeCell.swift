@@ -29,8 +29,8 @@ class HomeCell: UICollectionViewCell {
             memeCaptionLabel.text = self.post?.memeCaption
             self.setupAttributedDescription()
             
-            let attributedText = NSMutableAttributedString(string: "Likes: ", attributes: [NSAttributedStringKey.foregroundColor : UIColor.white, NSAttributedStringKey.font :  UIFont.boldSystemFont(ofSize: 15)])
-            attributedText.append(NSAttributedString(string: "\(post?.likeCount ?? 0)", attributes:   [NSAttributedStringKey.foregroundColor : UIColor.rgb(r: 217, g: 215, b: 215)]))
+            let attributedText = NSMutableAttributedString(string: "Likes: ", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white, NSAttributedString.Key.font :  UIFont.boldSystemFont(ofSize: 15)])
+            attributedText.append(NSAttributedString(string: "\(post?.likeCount ?? 0)", attributes:   [NSAttributedString.Key.foregroundColor : UIColor.rgb(r: 217, g: 215, b: 215)]))
             
             numberOfLikesButton.setAttributedTitle(attributedText, for: .normal)
  
@@ -295,9 +295,9 @@ extension HomeCell {
         
         guard let post = self.post else { return }
         
-        let attributedText = NSMutableAttributedString(string: post.user.username, attributes: [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 14)])
+        let attributedText = NSMutableAttributedString(string: post.user.username, attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 14)])
         
-        attributedText.append(NSAttributedString(string: "  \(post.memeDescription ?? "")",    attributes: [NSAttributedStringKey.foregroundColor : UIColor.rgb(r: 217, g: 215,  b: 215)]))
+        attributedText.append(NSAttributedString(string: "  \(post.memeDescription ?? "")",    attributes: [NSAttributedString.Key.foregroundColor : UIColor.rgb(r: 217, g: 215,  b: 215)]))
         
         descriptionLabel.attributedText = attributedText
     }

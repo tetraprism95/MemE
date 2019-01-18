@@ -95,7 +95,7 @@ class VideoController: UIViewController, AVCaptureFileOutputRecordingDelegate, U
     // MARK: - setupNavigationItem()
     
     private func setupNavigationItem() {
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
     }
     
     // video 

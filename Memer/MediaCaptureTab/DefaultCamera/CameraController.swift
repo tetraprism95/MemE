@@ -208,7 +208,7 @@ class CameraController: UIViewController, AVCapturePhotoCaptureDelegate {
     
     private func setupNavigationItem() {
         title = "Camera"
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         navigationController?.navigationBar.barTintColor = UIColor.rgb(r: 99, g: 99, b: 99)
     }
     
@@ -348,7 +348,7 @@ extension CameraController
                        delay: 0,
                        usingSpringWithDamping: 1,
                        initialSpringVelocity: 1,
-                       options: UIViewAnimationOptions.curveLinear,
+                       options: UIView.AnimationOptions.curveLinear,
                        animations: {
                         self.navigationItem.setLeftBarButton(self.backBarItem, animated: true)
                         self.navigationItem.setRightBarButton(self.nextBarItem, animated: true)
@@ -365,7 +365,7 @@ extension CameraController
                        delay: 0,
                        usingSpringWithDamping: 1,
                        initialSpringVelocity: 1,
-                       options: UIViewAnimationOptions.curveLinear,
+                       options: UIView.AnimationOptions.curveLinear,
                        animations: {
                         self.navigationItem.setLeftBarButton(nil, animated: true)
                         self.navigationItem.setRightBarButton(nil, animated: true)
