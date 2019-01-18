@@ -75,7 +75,7 @@ Meme app was created to understand different concepts such as...
 
 - And much more...
 
-## Bugs/Updates
+## Bugs/Need to Update
 
 - When trying to refresh the meme feed by scrolling down, the feed will continuously load and possibly crash. 
 I didn't implement the refresh, so it's more of "I need to update it" instead of it being an actual bug. 
@@ -90,6 +90,10 @@ most of the bottom section is yellow. Just need to change the color, but too laz
 - PodFile cannot be opened anymore.
 
 - IDK Other stuff if you can find fam.
+
+## Updated
+- Just reinstalled my podfile and updated firebase to v5.15.0. 
+- Assets folder was missing, so commited & pushed to github again. 
 
 
 
