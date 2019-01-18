@@ -92,7 +92,7 @@ most of the bottom section is yellow. Just need to change the color, but too laz
 - IDK Other stuff if you can find fam.
 
 ## Updated
-- Just reinstalled my podfile and updated firebase to v5.15.0. 
+- Just reinstalled my podfile due to bug and updated firebase to v5.15.0. 
 - Assets folder was missing, so commited & pushed to github again. 
 
 
