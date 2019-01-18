@@ -116,14 +116,28 @@ extension EditProfileHeader {
         
         guard let profileImage = selectedImage else { return }
         guard let imageData = profileImage.jpegData(compressionQuality: 0.5) else { return }
-        Storage.storage().reference().child("profilePictures").child(filename).putData(imageData, metadata: nil) { (metaData, error) in
+        let storageRef = Storage.storage().reference().child("profilePictures").child(filename)
+            storageRef.putData(imageData, metadata: nil) { (metaData, error) in
             
             if let error = error {
                 print("Could not save to storage: ", error)
             }
             
-            guard let imageUrl = metaData?.downloadURL()?.absoluteString else { return }
-            self.saveProfileToDatabase(imageUrl: imageUrl)
+                storageRef.downloadURL(completion: { (url, error) in
+                    if error != nil {
+                        print("failed to download url:", error ?? "error")
+                        return
+                    } else {
+                        if let imageUrl = url {
+                            self.saveProfileToDatabase(imageUrl: imageUrl.absoluteString)
+                        }
+                    }
+                })
+                
+//            guard let imageUrl = metaData?.downloadURL()?.absoluteString else { return }
+            
+            
+//            self.saveProfileToDatabase(imageUrl: imageUrl)
         }
     }
     

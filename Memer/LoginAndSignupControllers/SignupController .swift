@@ -202,9 +202,8 @@ class SignupController: UIViewController, UITextFieldDelegate
                 return
             }
             
-            print("User created: ", user?.uid ?? "")
             
-            guard let uid = user?.uid else { return }
+            guard let uid = user?.user.uid else { return }
             
             let dictionaryValues = ["email" : email, "username" : username, "fullname" : fullname]
             

@@ -148,16 +148,39 @@ class PostPhotoController: UIViewController, UIViewControllerTransitioningDelega
         guard let image = selectedImage else { return }
         guard let imageData = image.jpegData(compressionQuality: 0.5) else { return }
         
-        Storage.storage().reference().child("posts").child(filename).putData(imageData, metadata: nil) { (metaData, error) in
+        let storageRef = Storage.storage().reference().child("posts").child(filename)
+            
+            storageRef.putData(imageData, metadata: nil) { (metaData, error) in
             
             if let error = error {
                 print("Error: Could not save Image URL to Storagebase", error)
                 return
             }
+                
+//                storageRef.downloadURL(completion: { (url, error) in
+//                    if error != nil {
+//                        print("Failed to download url:", error!)
+//                        return
+//                    } else {
+//                        //Do something with url
+//                    }
             
-            guard let imageUrl = metaData?.downloadURL()?.absoluteString else { return }
+                storageRef.downloadURL(completion: { (url, error) in
+                    if error != nil {
+                        print("failed to download url:", error ?? "error")
+                        return
+                    } else {
+                        if let url = url {
+                            self.saveImageURLToDatabase(imageURL: url.absoluteString)
+                        }
+                    }
+                })
             
-            self.saveImageURLToDatabase(imageURL: imageUrl)
+          
+//            guard let imageUrl = metaData?.downloadURL()?.absoluteString else { return }
+            
+            
+//            self.saveImageURLToDatabase(imageURL: imageUrl)
         }
         self.dismiss(animated: true, completion: nil)
     }
